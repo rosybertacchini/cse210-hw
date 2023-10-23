@@ -1,0 +1,23 @@
+using System;
+
+
+public class CompleateScripture {
+
+                private List<Scripture>   _listScriptures = new List<Scripture>();
+                
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+}
+

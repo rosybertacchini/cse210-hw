@@ -12,7 +12,8 @@ class Word {
 
     }
     public Word (string word , Boolean visibility){   /// van los parametros?
-
+        _word = word ;   // NOTA DEL MAESTRO
+        _visibility = visibility;   // NOTA DEL MAESTRO
     }
 
 
@@ -38,7 +39,7 @@ class Word {
 
     // methods
 
-    // 
+    // NOTA DEL MAESTRO: aqui debe de haber un metodo para cambiar la visibilidad
 
 
 }

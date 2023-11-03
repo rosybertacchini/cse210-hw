@@ -73,4 +73,5 @@ where there is a single verse or multiple verses. What should they look like?
 
 }
 
-
+// method 
+// nota del maestro, debe tene metodo para formatear toda la escritura como string.

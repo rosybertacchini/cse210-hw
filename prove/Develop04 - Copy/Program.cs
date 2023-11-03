@@ -1,17 +1,6 @@
-/* ********************************************************************************* */
-// Rosy Bertacchini 
-// W08 Maindfullness program wiht EXCEEDING REQUIREMENTS 
-// EXCEEDING REQUIREMENTS: 
-//    Make sure no random prompts/questions are selected until they have all 
-//    been used at least once in that session
-//    You will see it in REFLECTING and LISTING activities 
-/* ********************************************************************************* */
-
-
 using System;
 using System.ComponentModel;
 using System.Data;
-
 
 class Program
 {
@@ -20,7 +9,7 @@ class Program
        
 
         // instances
-        BreathingActivity  breathingActivity  = new BreathingActivity(4,4);  //  the parameters are:  secodsToBreathIn and intsecodsToBreathOut for one of  the constructor class 
+        BreathingActivity  breathingActivity  = new BreathingActivity(4,4);  //  the parameters are:  secodsToBreathIn and intsecodsToBreathOut
         ListingActivity    listingActivity    = new ListingActivity();
         ReflectingActivity reflectingActivity = new ReflectingActivity();
 

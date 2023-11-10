@@ -10,7 +10,7 @@ public class Activity {
     private string _activityName  = "";
     private string _description = "";
     private string _endingMsg  = "";    
-    private int _durationInSeconds = 0;
+    private int _durationInSeconds = 0;  // OBSERVATION: you got 0 point because you did not make this variable PROTECTED
     private  string _animationType =  "";
     private int _seconds_for_animation = 0;
 

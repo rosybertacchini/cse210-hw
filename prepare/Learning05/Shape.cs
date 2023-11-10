@@ -1,17 +1,14 @@
-public class Shape {
+public abstract class Shape {
 
     private string _color = "";
 
 
     // consturctors
-
     public Shape() {
 
     }
 
-
     // setters and getters
-
     public void SetColor(string color){
         _color = color;        
     }
@@ -22,12 +19,7 @@ public class Shape {
 
 
 // methods
-
-public virtual double  GetArea(){
-
-    return 1.0;
-
-}
+public abstract double GetArea();
 
 
 } // end class

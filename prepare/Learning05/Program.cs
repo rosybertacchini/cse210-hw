@@ -20,7 +20,7 @@ class Program
             string color = s.GetColor();
             double area = s.GetArea();
 
-            Console.WriteLine($" el color es {color} y el shape tiene una area de {area}");
+            Console.WriteLine($" The color is  {color} Area of the shape is {area}");
         }
     
    } // main

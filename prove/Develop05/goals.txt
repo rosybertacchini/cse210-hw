@@ -1,0 +1,7 @@
+100
+SimpleGoal:Hacer Visitas, aun familiar o amigo,100,true 
+EternalGoal:Leer,Escrituras y libros buenos,50 
+CheckListGoal:Ir al Templo,Hacer ordenanzas,200,false,3,0,500 
+SimpleGoal:Hacer Cine , con una amiga,30,false 
+SimpleGoal:Hacer limpiar, la casa,40,false 
+SimpleGoal:Hacer tareas, de Pathway,80,false 

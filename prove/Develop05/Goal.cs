@@ -1,20 +1,18 @@
 using System.ComponentModel.DataAnnotations;
+using Microsoft.VisualBasic;
 
-public class Goal {
+public  abstract   class Goal {
 
 // Attributes
-// AQUI    ALGUNA VARIABLE DEBE SER PROTECTED
 
-    protected string  _goalName = "";
-	protected string  _goalDescription = "";
-	protected int     _amountPoints = 0;
-    protected  Boolean _goalCompleated = false;
-    private int _totalAmountPoints= 0;  // AQUI verificar esto
+    protected string   _goalName = "";
+	protected string   _goalDescription = "";
+	protected int      _amountPoints = 0;  // All type og goals have an amount of point to be eraned
 
 // Constructors
-    
+    public Goal(){ }
 
-// Setters and Getters
+// Setters
     public void SetGoalName(string goalName){
         _goalName = goalName;
     }
@@ -24,39 +22,25 @@ public class Goal {
     public void SetAmountPoints(int amountPoints){
         _amountPoints = amountPoints;
     }
-    public void SetGoalCompleated(Boolean goalCompleated){
-             _goalCompleated = goalCompleated;
-
-    }
-
+  
+// Getters
     public string GetGoalName(){
         return _goalName ;
     }
     public string GetGoalDescription(){
         return _goalDescription;
     }
-    public int  GetAmountPoints(){
+    public  int  GetAmountPoints(){
         return _amountPoints;
-        }
-    public  Boolean GetGoalCompleated(){
-            return _goalCompleated;
     }
 
+// Abstract Methods   
+//******************************************************************************
 
-//  Methods   
-
-    public virtual int  CalculateTotalPoints(){
-            return 0;
-    }
-    public void  RecordEvent(int typeOfGoal  ){
-
-    }
-    public virtual   void DisplayGoal(){
-        string compleated = GetGoalCompleated() == true ? "X" : " ";
-        Console.WriteLine($" [{compleated}] ->  {GetGoalName()} / {GetGoalDescription()} Points: {GetAmountPoints()}");
-        Console.WriteLine("Yor total point are : 9999");   // AQUI calcular puntos
-    }
-
-
-
+    public abstract string BuildGoalString();
+   // public abstract  int CalculatePoint();
+    public  abstract  void RecordAnEvent();
+    public abstract void DisplayGoal();
+   
+  
 } // End Class

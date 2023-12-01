@@ -4,55 +4,46 @@ using System.Transactions;
 
 public class Video {
 
-// Attributes
-    private string _title  = "";
-    private string _author  = "";
-    private Int32 _lenghtInSecods = 0 ;
-    private List<Comment> _comments  = new List<Comment>{};
+    // Attributes
+        public string _title  = "";
+        public string _author  = "";
+        public double _lenghtInSeconds = 0 ;
+        public List<Comment> _comments  = new List<Comment>{};
 
-// Consturctors
-    public Video() {
-    }
-    public Video(string title, string author, Int32 lengthInSeconds, List<Comment> comments ) { 
-        _title = title;
-        _author = author;
-        _lenghtInSecods = lengthInSeconds;
-        _comments = comments;
-    }
+    // Setters
 
+    // Gettres
 
+    // Consturctors
+        public Video() {
+            _comments = new List<Comment>();
+        }
+        public Video(string title, string author, double lenghtInSecods ,  List<Comment> comments) {
+            _title= title;
+            _author = author;
+            _lenghtInSeconds = lenghtInSecods;
+            _comments = comments ;
+        }        
 
-// Setters and Getters
-    public void SetTitle(string title){
-        _title = title;
-    }
-    public void SetAuthor(string author){
-        _author = author;
-    }
-    public void SetLengthInSeconds(Int32 lengthInSeconds){
-        _lenghtInSecods = lengthInSeconds;
-    }
-    public string GetTitle(){
-        return _title ;
-    }
-    public string GetAuthor(){
-        return _author ;
-    }
-    public Int32 GetLengthInSeconds(){
-        return _lenghtInSecods ;
-    }
-    public Int32 GetNumberOfComments(){
-        return _comments.Count();
-    }
+    // Methods
 
-// Methods
-    public void DisplayVideoDetails(){
+        /* - - - - - - - - - - - */
+        public void DisplayVideoDetails(){
+            int index = 1;
+            Console.Write($"Video title: {_title.ToUpper()} ");
+            Console.Write($"Length {_lenghtInSeconds} by {_author}");
+            Console.WriteLine("");
+            Console.WriteLine($"This video has {NumberOfComments()} COMMENTS:");
+            Console.WriteLine("");
+            foreach (Comment c in _comments){
+                Console.WriteLine($"[{index}] {c._personName} -> {c._textComment}");
+                index++;
+            }
+        }
+        /* - - - - - - - - - - - */
+        private int NumberOfComments(){
+            return _comments.Count();
+        }
+        /* - - - - - - - - - - - */
         
-
-
-    }
-
-
-
-
-}
+} // End of Class

@@ -16,8 +16,10 @@ class Program
         // Instances
         List<Event> events = new List<Event>();
         
-        // Create Enents Data
+        // Create Events Data
         CreateDataEvents();
+
+        // For each event call the 3 different methods,  to generete the three different messages.
         int i = 1;
         Console.Clear();
         Console.WriteLine("------------------------------------------------------------------------------");

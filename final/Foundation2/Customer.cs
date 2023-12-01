@@ -1,5 +1,3 @@
-
-
 class Customer {
 
     // Attributes
@@ -20,9 +18,6 @@ class Customer {
         
 
     // Getters
-        public int  GetCustomerID(){
-            return _customerID;
-        } 
         public string GetCustomerName(){
         return  _customerName;
         }

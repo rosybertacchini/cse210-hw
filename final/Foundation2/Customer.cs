@@ -21,7 +21,7 @@ class Customer {
         public string GetCustomerName(){
         return  _customerName;
         }
-        private Address GetCustomerAddress(){
+        public Address GetCustomerAddress(){
             return _customerAddress;
         }
 
@@ -40,7 +40,7 @@ class Customer {
     // Methods
         /* - - - - - - - - - - - */
         public Boolean LiveInUSA()  {
-            return ( GetCustomerAddress().IsAddressInUSA() ?true  : false );
+            return ( GetCustomerAddress().IsAddressInUSA() ? true  : false );
         }
         /* - - - - - - - - - - - */
         public string DisplayAddress(){

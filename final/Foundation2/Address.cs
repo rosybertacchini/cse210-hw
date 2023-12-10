@@ -6,8 +6,12 @@ class Address {
         private string _state = "";
         private int _zipCode = 0;
         private string _country = "";
-        private Boolean _inUSA = false;
+       
 
+    // Getters
+        public string GetCountry(){
+            return _country;
+        }
 
     // Constructors
         public Address(){
@@ -25,13 +29,7 @@ class Address {
     // Methods
         /* - - - - - - - - - - - */
         public Boolean IsAddressInUSA(){
-            if (_country.ToLower() =="us" || _country.ToLower() == "usa" ){
-                return true;
-            }
-            else
-            {
-                return false;  
-            }    
+            return ( _country.ToLower() =="us" || _country.ToLower() == "usa" ? true :false);
         }
         /* - - - - - - - - - - - */
         public string BuildStrCompleateAddress(){

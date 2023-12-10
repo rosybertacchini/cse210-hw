@@ -23,14 +23,13 @@ public class Running : Activity {
  
         public override void  DoCalculations(ref double Distance, ref double Speed, ref double Pace){
 
-        // Distance (km) = swimming laps * 50 / 1000
-        // Speed (mph or kph) = (distance / minutes) * 60
-        // Pace (min per mile or min per km)= minutes / distance
-        // Speed = 60 / pace
-        // Pace = 60 / speed
-        
-            
-            //double theDistance = _distance;
+            // Distance (km) = swimming laps * 50 / 1000
+            // Speed (mph or kph) = (distance / minutes) * 60
+            // Pace (min per mile or min per km)= minutes / distance
+            // Speed = 60 / pace
+            // Pace = 60 / speed
+
+            // distance = speed x time
 
 
             //---------------------------------------------------------------
@@ -42,15 +41,10 @@ public class Running : Activity {
              Speed = (_distance / (double)this.GetLength()) * 60 ;
 
             // We need to calculate Pace
+            // Pace is Time divided by Distance and represents the amount of time taken to cover a given distance
              Pace = 60 / Speed ;
-        //---------------------------------------------------------------
-
-
-            //Pace = (double)this.GetLength() / _distance;
-            //03 Nov 2022 Running (30 min): Distance 4.8 km, Speed: 9.7 kph, Pace: 6.9 min per km
-
-
+            //---------------------------------------------------------------
         }
 
 
-}
+} // Class

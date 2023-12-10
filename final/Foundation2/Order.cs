@@ -33,14 +33,15 @@ class Order {
 
 
     // Methods
-
+        /* - - - - - - - - - - - */
         public double SubTotalCostOfTheOrder(){
                 double subTotal = 0;
                 foreach(Product p in GetProducts()){
-                    subTotal += p.GetProductPrice() * p.GetProductQty();
+                    subTotal += p.GetTotalPrice();                              
                 }
                return subTotal;
         } 
+        /* - - - - - - - - - - - */        
         public string PackingList(){
             string PackingStr = "";
             foreach(Product p in GetProducts()){
@@ -48,7 +49,7 @@ class Order {
             }
             return PackingStr;
         }
-
+        /* - - - - - - - - - - - */
         public string ShippingLabel(Customer c){
             string shippingStr = "";
             shippingStr += "\t*****************************\n";
@@ -58,5 +59,9 @@ class Order {
             return shippingStr;
 
         }
+        /* - - - - - - - - - - - */
+        public double  GetShippingCost(Customer customer){
+            return (customer.GetCustomerAddress().IsAddressInUSA() ? 5 : 35);
+        }    
 
 } // End Class

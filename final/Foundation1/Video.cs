@@ -36,7 +36,7 @@ public class Video {
             Console.WriteLine($"This video has {NumberOfComments()} COMMENTS:");
             Console.WriteLine("");
             foreach (Comment c in _comments){
-                Console.WriteLine($"[{index}] {c._personName} -> {c._textComment}");
+                Console.WriteLine ($"[{index}] {c.DisplayComment()}");       
                 index++;
             }
         }

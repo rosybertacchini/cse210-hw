@@ -36,10 +36,10 @@ class Program
             Console.WriteLine($"Sub-Total {o.SubTotalCostOfTheOrder()}");
             
             // ****** Charge the shipping cost - inside US or the rest of the world 
-            shippingCost =  (customers[o.GetCustomerID()].LiveInUSA() ? 5 : 35);
-            
+            shippingCost =  o.GetShippingCost(customers[o.GetCustomerID()]);
+
             Console.ForegroundColor = ConsoleColor.Blue; 
-            Console.WriteLine($"Shiping cost: ${shippingCost}"); 
+            Console.WriteLine($"Shipping cost: ${shippingCost}"); 
             Console.ResetColor();                  
             Console.WriteLine("");
             Console.WriteLine($"Total for this order  {o.SubTotalCostOfTheOrder() + shippingCost}");                   

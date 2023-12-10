@@ -13,20 +13,12 @@ class Reception : Event {
 
    // Getters
 
-      public string GetEmailRSVP(){
-         return _emailRSVP;
-      }
-   // Constructors
 
-      public Reception(){}
-      public Reception(string  emailRSVP){
-         _emailRSVP = emailRSVP;
-      }
 
    // Methods
 
       public  string  DisplayEventInfo(){
-         return   ( "Registered by (RSVP) email: " + GetEmailRSVP());
+         return   ( "Registered by (RSVP) email: " + _emailRSVP);
       }
  
 

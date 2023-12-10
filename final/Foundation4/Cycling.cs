@@ -22,6 +22,14 @@ public class Cycling  : Activity {
 
         public override void DoCalculations(ref double Distance, ref double Speed, ref double Pace){
 
+            // Distance (km) = swimming laps * 50 / 1000
+            // Speed (mph or kph) = (distance / minutes) * 60
+            // Pace (min per mile or min per km)= minutes / distance
+            // Speed = 60 / pace
+            // Pace = 60 / speed
+
+            // distance = speed x time            
+
             //---------------------------------------------------------------
             //this class has:
              Speed = _speed;
@@ -31,8 +39,8 @@ public class Cycling  : Activity {
              Distance =  (_speed / 60 )  * (double) this.GetLength() ;
 
             // We need to calculate Pace
+            // Pace is Time divided by Distance and represents the amount of time taken to cover a given distance
              Pace = 60 / Speed ;
-           //  no    Pace = 60 /   (  Speed / 60 );   // ?
            //---------------------------------------------------------------
 
         }

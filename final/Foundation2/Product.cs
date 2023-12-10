@@ -48,6 +48,9 @@ class Product {
 
     // Methods 
     
+    public double  GetTotalPrice(){
+        return  _price  * _qty;
+    }
 
 
 }

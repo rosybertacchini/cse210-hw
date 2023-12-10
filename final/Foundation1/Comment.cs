@@ -12,5 +12,8 @@ public class Comment {
 
     // Methods
 
+    public string DisplayComment(){
+         return  _personName + _textComment;
+    }
 
 }

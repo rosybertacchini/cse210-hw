@@ -9,9 +9,6 @@ public abstract  class Activity {
     // Setters 
  
     // Getters
-        public DateTime GetDate(){
-            return _date;
-        }
         public int GetLength(){
             return _length;
         }
@@ -25,7 +22,7 @@ public abstract  class Activity {
 
     // Methods
 
-        public   void GetSummary(){
+        public  void GetSummary(){
                 double Distance = 0;
                 double Speed = 0; 
                 double Pace = 0;
@@ -45,7 +42,7 @@ public abstract  class Activity {
 
           
                 
-                Console.WriteLine($" {this.GetDate().ToString("dd MMM yyyy")} - {this.GetType().ToString().ToUpper()} ({this.GetLength()} min): Distance {Distance.ToString("N3")}  km, Speed: {Speed.ToString("N3")} kph, Pace: {Pace.ToString("N1")} min per km" );
+                Console.WriteLine($" {this._date.ToString("dd MMM yyyy")} - {this.GetType().ToString().ToUpper()} ({this._length} min): Distance {Distance.ToString("N3")}  km, Speed: {Speed.ToString("N3")} kph, Pace: {Pace.ToString("N1")} min per km" );
 
         }
 

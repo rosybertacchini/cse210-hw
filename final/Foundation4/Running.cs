@@ -4,13 +4,9 @@ public class Running : Activity {
         double _distance = 0;
 
     // Setters 
-       public void SetDistance(double distance){
-            _distance = distance;
-       } 
+
     // Getters
-       public double GetDistance(){
-            return _distance;
-       } 
+
     // Constructors
         public Running(){}
         public Running(double distance, DateTime date, int length) : base(date, length) {
@@ -19,8 +15,6 @@ public class Running : Activity {
 
 
     // Methods
-
- 
         public override void  DoCalculations(ref double Distance, ref double Speed, ref double Pace){
 
             // Distance (km) = swimming laps * 50 / 1000
@@ -38,7 +32,7 @@ public class Running : Activity {
             
             // We need to calculate: Speed
             // formula: speed =  distance  / time (_distance is in km/hr, we multiply length (GetLenght() is in minutes)  by 60 to convert to to hours 
-             Speed = (_distance / (double)this.GetLength()) * 60 ;
+             Speed = (_distance / (double) this.GetLength()) * 60 ;
 
             // We need to calculate Pace
             // Pace is Time divided by Distance and represents the amount of time taken to cover a given distance

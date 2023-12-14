@@ -7,12 +7,12 @@
 
     // Getters
 
-
     // Constructors
-        public Outdoor(){}
-        public Outdoor(string weather){
+      public Outdoor(){}
+      public Outdoor(string title, string description, string date, string time, Address address, string weather)  : base(title, description, date, time, address)
+      {
             _weather = weather;
-        }
+      }
 
     // Methods
 

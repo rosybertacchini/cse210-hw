@@ -7,9 +7,6 @@ public class Comment {
     // Constructor
         public Comment(){}
 
-
-
-
     // Methods
 
     public string DisplayComment(){

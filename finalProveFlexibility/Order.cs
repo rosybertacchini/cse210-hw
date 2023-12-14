@@ -43,10 +43,10 @@ class Order {
         /* - - - - - - - - - - - */        
         public string PackingList(){
             string PackingStr = "";
-            Console.WriteLine("   PROD ID" +  "\t" + "NAME"  + "\t\t\t" + "QTY" + "\t" + "UNIT PRICE"  );
+            Console.WriteLine("   PROD ID" +  "\t" + "NAME"  + "\t\t\t" + "QTY" + "\t" + "UNIT PRICE" + "\t" + "DISCOUNT PRICE"   );
 
             foreach(Product p in GetProducts()){
-                PackingStr += "\t" +  p.GetProductID() +"\t" + p.GetProductName() + "\t\t" + p.GetProductQty() + "\t" + p.GetProductPrice() +  "\n";
+                PackingStr += "\t" +  p.GetProductID() +"\t" + p.GetProductName() + "\t\t" + p.GetProductQty() + "\t" + p.GetProductPrice() + "\t\t" + p.GetPriceDiscount() + "\n";
             }
             return PackingStr;
         }

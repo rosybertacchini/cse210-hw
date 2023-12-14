@@ -9,18 +9,7 @@ class Product {
         private int _qty = 0;
 
     // Setters
-        public void SetProductID(int productID){
-            _productID = productID;
-        }
-        public void SetProductName(string productName){
-            _productName = productName;
-        }
-        public void SetProductPrice(double price){
-            _price = price;
-        }
-        public void SetProductQty(int qty){
-            _qty = qty;
-        }
+
 
     //Getters
         public int GetProductID(){

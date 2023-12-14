@@ -61,26 +61,13 @@ class Program
             
             //Order No 1
             Order o1 = new Order();
-            Product p1 = new Product();
-            Product p2 = new Product();
-            Product p3 = new Product();
+            Product p1 = new Product(1,"Italian Zucca",10.0,5);
+            Product p2 = new Product(2,"Tiger Nuts",18.5,2);
+            Product p3 = new Product(3,"Asparagus",8.6,3);
 
-            p1.SetProductID(1);
-            p1.SetProductName("Italian Zucca");
-            p1.SetProductPrice(10.00);
-            p1.SetProductQty(5);
+
             products_order1.Add(p1);
-
-            p2.SetProductID(2);
-            p2.SetProductName("Tiger Nuts");
-            p2.SetProductPrice(18.50);
-            p2.SetProductQty(2);
             products_order1.Add(p2);
-
-            p3.SetProductID(3);
-            p3.SetProductName("Asparagus");
-            p3.SetProductPrice(8.60);
-            p3.SetProductQty(3);
             products_order1.Add(p3);
 
             o1.SetCustomerID(1);
@@ -90,33 +77,14 @@ class Program
            //Order No 2
 
             Order o2 = new Order();
-            Product p4 = new Product();
-            Product p5 = new Product();
-            Product p6 = new Product();
-            Product p7 = new Product();
+            Product p4 = new Product(4,"Mâche nantaise",10.00,5);
+            Product p5 = new Product(5,"Chinise Parsley",7.5,2);
+            Product p6 = new Product(6,"Moussaka",5.0,3);
+            Product p7 = new Product(7,"Autumn Pumpkin",4.5,15);
 
-            p4.SetProductID(4);
-            p4.SetProductName("Mâche nantaise");
-            p4.SetProductPrice(10.00);
-            p4.SetProductQty(5);
             products_order2.Add(p4);
-
-            p5.SetProductID(5);
-            p5.SetProductName("Chinise Parsley");
-            p5.SetProductPrice(7.50);
-            p5.SetProductQty(2);
             products_order2.Add(p5);
-
-            p6.SetProductID(6);
-            p6.SetProductName("Moussaka");
-            p6.SetProductPrice(5.0);
-            p6.SetProductQty(3);
             products_order2.Add(p6);
-
-            p7.SetProductID(7);
-            p7.SetProductName("Autumn Pumpkin");
-            p7.SetProductPrice(4.50);
-            p7.SetProductQty(15);
             products_order2.Add(p7);            
             
             o2.SetCustomerID(4);

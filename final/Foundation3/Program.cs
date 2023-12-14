@@ -54,36 +54,12 @@ class Program
             Address address2 = new Address("456 Oak St", "Rigby", "ID", 67890, "US");
             Address address3 = new Address("381-383 Avenue Louise", "Brussels", "", 1050, "BELGIUM");
             
-            Reception er = new Reception();
-            Lecutre   el = new Lecutre();
-            Outdoor   eo = new Outdoor();
-            
-            //  Reception type event
-            er.SetTitle("18th Food Festival");
-            er.SetDescription("The best local restaurants, chefs, and food vendors in one place! food and drinks to attendees");
-            er.SetDate("12/25/23");
-            er.SetTime("09:15 AM");
-            er.SetAddress(address1); 
-            er.SetEmailRSVP("rsvp@gmail.com");
+            Reception er = new Reception("18th Food Festival","The best local restaurants, chefs, and food vendors in one place! food and drinks to attendees","12/25/23","09:15 AM",address1,"rsvp@gmail.com");
+            Lecutre   el = new Lecutre("BYUI Women's Conference, 2023","Annual conference for BYUI for all women's students","12/31/23","19:00",address2,"Brother Christian Russembeger",12000);
+            Outdoor   eo = new Outdoor("Boy Scouts Camping 2023","Good opportunities for Cub Scouts through long-term camps","12/28/23","06:30 PM",address3,"Expecting snow storm, very Cold weather!!");
+          
             events.Add(er);
-
-            //  Outdoor type event
-            eo.SetTitle("Boy Scouts Camping 2023");
-            eo.SetDescription("Good opportunities for Cub Scouts through long-term camps");
-            eo.SetDate("12/28/23");
-            eo.SetTime("06:30 PM");
-            eo.SetAddress(address3); 
-            eo.SetWeather("Expecting snow storm, very Cold weather!!");
             events.Add(eo);
-
-            //  Lecutre type event
-            el.SetTitle("BYUI Women's Conference, 2023");
-            el.SetDescription("Annual conference for BYUI for all women's students");
-            el.SetTime("19:00");
-            el.SetDate("12/31/23");
-            el.SetAddress(address2); 
-            el.SetSpeaker("Brother Christian Russembeger");
-            el.SetMaxCapacity(12000);
             events.Add(el);
         }
         

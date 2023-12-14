@@ -8,7 +8,7 @@ public class Cycling  : Activity {
             _speed = speed;
        } 
     // Getters
-       public double GetSpeede(){
+       public double GetSpeed(){
             return _speed;
        } 
     // Constructors

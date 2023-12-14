@@ -1,5 +1,3 @@
-using System.Runtime.CompilerServices;
-
 public class Swimming  : Activity {
 
     //Attributes 
@@ -9,10 +7,6 @@ public class Swimming  : Activity {
             _numberOfLaps = numberOfLaps;
        } 
     // Getters
-       public double GetNumberOfLapse(){
-            return _numberOfLaps;
-       } 
-
        
     // Constructors
         public Swimming(){}

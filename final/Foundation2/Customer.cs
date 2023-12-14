@@ -6,16 +6,7 @@ class Customer {
         private Address _customerAddress = new Address();
 
     // Setters
-        public void SetCustomerID(int customerID ){
-            _customerID = customerID;
-        } 
-        public void SetCustomerName(string customerName){
-            _customerName = customerName;
-        }
-        public void SetAddress( Address customerAddress){
-            _customerAddress = customerAddress ;
-        }  
-        
+       
 
     // Getters
         public string GetCustomerName(){
@@ -40,11 +31,11 @@ class Customer {
     // Methods
         /* - - - - - - - - - - - */
         public Boolean LiveInUSA()  {
-            return ( GetCustomerAddress().IsAddressInUSA() ? true  : false );
+            return (_customerAddress.IsAddressInUSA() ? true  : false );
         }
         /* - - - - - - - - - - - */
         public string DisplayAddress(){
-            return  GetCustomerAddress().BuildStrCompleateAddress();
+            return _customerAddress.BuildStrCompleateAddress();
         }
 
         /* - - - - - - - - - - - */

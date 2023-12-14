@@ -1,5 +1,3 @@
-
-
 public class Event {
 
     // Attributes
@@ -10,8 +8,21 @@ public class Event {
         private Address _address;
 
     // Setters
-
-        
+        public void SetTitle(string title){
+            _title = title;
+        }
+        public void SetDescription(string description){
+           _description = description;
+        }     
+        public void SetDate(string date){
+           _date = date;
+        }             
+        public void SetTime(string time){
+           _time = time;
+        } 
+        public void SetAddress(Address address){
+           _address = address;
+        }         
     // Getters
         public string GetTitle( ){
              return _title ;
@@ -24,7 +35,13 @@ public class Event {
 
     // Constructors
         public Event(){}
-        public Event(string title, string description, string time, Address address){ }
+        public Event(string title, string description,string date ,  string time, Address address){
+            _title = title;
+            _description = description;
+            _date = date;
+            _time = time;
+            _address = address;
+         }
 
     // Methods
         /* - - - - - - - - - - - */
@@ -57,9 +74,5 @@ public class Event {
         public  void  DisplayShortShortMessage(Event e){
                 Console.WriteLine($"\tType of Event: {e.GetType().ToString()},   Title: {e.GetTitle()},    Date: {e.GetDate()}");
         }
-        
-
-
-
 
 }
